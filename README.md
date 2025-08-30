@@ -48,8 +48,6 @@ $$
 * **`clean_by_date_mean`** – aggregated values by day, corrected labels, added location tags.
 * **`_plot_series`** – generated irradiance time series plots.
 
-*📌 Figure Placeholder: Data cleaning and preprocessing pipeline*
-
 ---
 
 ### 3.4 Forecasting Models
@@ -81,8 +79,6 @@ Unlike LSTM/GRU, which sequentially encode a single trajectory, AMMC adaptively 
 * High-frequency tropical noise (sudden cloud cover, microclimate changes).
 * Cross-location heterogeneity (Bambili vs. Yaoundé).
 * Both **short-term peaks** (daily irradiance spikes) and **long-term trends** (seasonal cycles).
-
-*📌 Figure Placeholder: AMMC architecture overview*
 
 ---
 
