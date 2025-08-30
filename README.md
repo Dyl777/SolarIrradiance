@@ -1,8 +1,3 @@
-Got it ✅ — you want the LaTeX paper rewritten in **Markdown format** (so it’s easier to read, edit, and adapt into blogs, GitHub docs, or Overleaf later) while also **expanding the technical discussion about AMMC**.
-
-Here’s the rewritten **Markdown research paper** version with an extended AMMC discussion:
-
----
 
 # Solar Irradiance Forecasting in Cameroon Using Statistical, Deep Learning, and Hybrid Time Series Models
 
