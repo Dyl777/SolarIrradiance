@@ -8,7 +8,7 @@
 
 ## Abstract
 
-Accurate solar irradiance forecasting is vital for renewable energy integration in sub-Saharan Africa, where solar resources are abundant but underutilized. This study evaluates statistical (ARIMA, SARIMAX), deep learning (LSTM, GRU, CNN-LSTM), and hybrid frameworks (Prophet, AMMC) using multi-location meteorological data from Cameroon (2005–2020). The models were trained and tested on irradiance, temperature, humidity, and wind speed across four towns. Results show that AMMC consistently outperformed baselines, reducing underfitting and improving generalization across volatile tropical weather. The findings provide insights for solar grid integration and renewable energy planning in Africa. AMMC required just 30-40s to train on a Colab CPU over 108k data samples (15s on a T4 GPU) as opposed to ARIMA took 1-2mins to train while SARIMAX took 2-3mins to train on even Google Colab 8-core CPU and 15-30secs, 40-50secs on a single T4 Google Colab GPU respectively. We performed gridsearch for hyperparameter tuning but it didn’t significantly improve the quality of the models, which took around 1hr24mins on a single Google Colab 8-core CPU, 30-50mins for CNN, LSTMs
+Accurate solar irradiance forecasting is vital for renewable energy integration in sub-Saharan Africa, where solar resources are abundant but underutilized. This study evaluates statistical (ARIMA, SARIMAX), deep learning (LSTM, GRU, CNN-LSTM), and hybrid frameworks (Prophet, AMMC) using multi-location meteorological data from Cameroon (2005–2020). The models were trained and tested on irradiance, temperature, humidity, and wind speed across four towns. Results show that AMMC consistently outperformed baselines, reducing underfitting and improving generalization across volatile tropical weather. The findings provide insights for solar grid integration and renewable energy planning in Africa. AMMC required just **30-40s** to train on a Colab CPU over 108k data samples (**15s** on a **T4 GPU**) as opposed to ARIMA took 1-2mins to train while SARIMAX took 2-3mins to train on even Google Colab 8-core CPU and 15-30secs, 40-50secs on a single T4 Google Colab GPU respectively. We performed gridsearch for hyperparameter tuning but it didn’t significantly improve the quality of the models (ARIMA-SARIMAX), which took around 1hr24mins on a single Google Colab 8-core CPU, 30-50mins for CNN, LSTMs
 
 ---
 
@@ -90,7 +90,6 @@ Unlike LSTM/GRU, which sequentially encode a single trajectory, AMMC adaptively 
 * Temperature: 18–20 °C
 * Irradiance: peaks at 600–800 W/m²
 
-*📌 Figure Placeholder: Time series of irradiance in Bamenda (2005–2020)*
 
 ### 4.2 Model Comparisons
 
@@ -113,12 +112,6 @@ Unlike LSTM/GRU, which sequentially encode a single trajectory, AMMC adaptively 
 ## 5. Conclusion and Future Work
 
 This research demonstrates the importance of adaptive hybrid frameworks in forecasting solar irradiance in tropical climates. AMMC consistently outperformed statistical and deep learning baselines, making it suitable for practical energy planning in Cameroon and beyond.
-
-**Future work:**
-
-* Integration of satellite imagery and weather forecasts.
-* Deployment of real-time AMMC on IoT-enabled solar farms.
-* Transfer learning for cross-regional generalization across Africa.
 
 ---
 
